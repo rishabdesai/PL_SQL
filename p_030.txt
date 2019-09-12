@@ -1,0 +1,11 @@
+declare
+	x number(4) :=100;
+	y number(4) :=-11;
+	z number(4) :=100;
+begin
+	for x in y..z*2
+	loop
+	insert into tempp values(x,'in the loop');
+	end loop;
+end;
+/

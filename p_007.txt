@@ -1,0 +1,14 @@
+Declare
+	x char(15);
+	y number(6,2);
+	z constant number(2,1) := 0.4;
+	hra number(6,2);
+begin
+	x := upper('&ename');
+	y := &salary;
+	hra := y*z;
+	
+	insert into tempp values(y,x);
+	insert into tempp values(hra,'HRA');
+	end;
+/

@@ -1,0 +1,12 @@
+declare
+	x number(4) :=1;
+begin
+	insert into tempp values (x,'before sub');
+	declare 
+		y number(4) :=2;
+	begin 
+		insert into tempp values(y,'in sub');
+	end;
+insert into tempp values(x,'after sub');
+end;
+/

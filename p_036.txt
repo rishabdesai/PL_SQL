@@ -1,0 +1,15 @@
+declare
+	x number(4) :=1;
+begin
+	insert into tempp values(x,'A');
+	goto abc;
+	<<pqr>>
+	insert into tempp values(x,'C');
+	x := x+1;
+	<<abc>>
+	insert into tempp values(x,'B');
+	if x<3 then
+	goto pqr;
+	end if;
+end;
+/

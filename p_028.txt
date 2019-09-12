@@ -1,0 +1,7 @@
+begin
+	for x in 1..10
+	loop
+		insert into tempp values(x,'in the loop');
+	end loop;
+end;
+/

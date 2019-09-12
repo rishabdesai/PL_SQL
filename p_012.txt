@@ -1,0 +1,13 @@
+declare
+	type pqr is record
+	(
+	a emp20.sal%type,
+	b emp20.job%type
+	);
+	x pqr;
+begin
+	select sal,job into x from emp20
+	where ename='KING';
+	insert into tempp values(x.a,x.b);
+end;
+/

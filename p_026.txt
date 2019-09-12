@@ -1,0 +1,10 @@
+declare
+	x number(4) :=1;
+begin
+	loop
+		insert into tempp values(x,'in x loop');
+		exit when x > 5;
+		x :=x+1;
+	end loop;
+end;
+/

@@ -1,0 +1,11 @@
+declare
+	x number(7,2);
+	y char(20);
+begin
+	x := &num;
+	select decode(mod(x,7),0,'divisible by 7','not divisible by 7')
+	into y from dual;
+	insert into tempp values(x,y);
+	dbms_output.put_line('number '||x||' is divisible by 7');
+end;
+/

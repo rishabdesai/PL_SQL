@@ -1,0 +1,7 @@
+Declare 
+	x char(15);
+Begin
+	x := '&name';
+	insert into tempp values(1,x);
+end;
+/

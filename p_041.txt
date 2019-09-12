@@ -1,0 +1,13 @@
+declare
+	cursor c1 is select * from emp21;
+	x emp21%rowtype;
+begin
+	open c1;
+	for y in 1..5
+	loop
+		fetch c1 into x;
+		insert into tempp values(x.empno,x.ename);
+	end loop;
+	close c1;
+end;
+/

@@ -1,0 +1,9 @@
+declare
+	x number(4) :=100;
+begin
+	for x in 1.5..9.3
+	loop
+		insert into tempp values(x,'in for loop');
+	end loop;
+end;
+/

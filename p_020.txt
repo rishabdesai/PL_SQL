@@ -1,0 +1,12 @@
+declare
+	x number(4);
+	y char(15);
+begin
+	select sal,
+	decode (sign(sal-5000),1,'highSal',
+				-1,'lowSal',
+				   'medSal') into x,y
+	from emp20 where ename ='KING';
+	insert into tempp values(x,y);
+end;
+/

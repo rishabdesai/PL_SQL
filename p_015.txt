@@ -1,0 +1,11 @@
+declare
+	x number(4);
+begin
+	select sal into x from emp20 where ename = 'SCHOO';
+	if x > 5000 then
+		insert into tempp values(x,'High Sal');
+	else
+		insert into tempp values(x,'Low Sal');
+	end if;
+end;
+/

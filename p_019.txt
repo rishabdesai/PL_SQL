@@ -1,0 +1,9 @@
+declare 
+	x boolean;
+begin
+	x := FALSE;
+	if not x then
+	insert into tempp values (2,'Pune');
+	end if;
+end;
+/

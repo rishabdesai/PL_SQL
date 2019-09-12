@@ -1,0 +1,10 @@
+declare
+	x number(4);
+begin
+	select sal into x from emp20
+	where ename='KING';
+	insert into tempp values(x,'king1');
+	exception when too_many_rows then
+	insert into tempp values(1,'exception');
+end;
+/

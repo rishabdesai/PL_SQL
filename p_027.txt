@@ -1,0 +1,9 @@
+declare
+	x number(7,2) :=1;
+begin
+	for x in 1..10
+	loop
+		insert into tempp values(x,'in for loop');
+	end loop;
+end;
+/

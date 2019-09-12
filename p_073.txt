@@ -1,0 +1,13 @@
+declare
+	x number(4);
+	abcd exception;
+begin
+	select sal into x from emp20 where ename='KING';
+	if x>4000 then
+		raise abcd;
+	end if;
+		insert into tempp values(x,'NoExcep');
+	exception when abcd then 
+		insert into tempp values(x,'High Sal');
+end;
+/

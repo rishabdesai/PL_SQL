@@ -1,0 +1,9 @@
+declare
+	x boolean;
+begin
+	x := TRUE;
+	if x then
+		insert into tempp values(1,'Mumbai');
+	end if;
+end;
+/

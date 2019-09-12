@@ -1,0 +1,16 @@
+cl scr
+prompt welcome to DAC
+accept y 
+prompt 'please enter deptno of your choice'
+
+declare
+	x number(4);
+begin
+	x :=&y;
+	insert into tempp values(x,'Name2');
+end;
+/
+
+undefine y
+cl scr
+select * from tempp;

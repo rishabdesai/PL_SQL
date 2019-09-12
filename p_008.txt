@@ -1,0 +1,20 @@
+declare
+	x char(15);
+	y number(7,2);
+	z constant number(2,1) := 0.4;
+	hra number(6,2);
+begin
+	x := upper('&ename');
+	y := &salary;
+	hra := y*z;
+	
+	dbms_output.put_line('Ename =' || x);
+	dbms_output.put_line('Salary =' || y);
+	dbms_output.put_line('HRA = '|| hra);
+	dbms_output.put_line('prog run on  = '||to_char(sysdate,'DD/MM/YY') );
+
+end;
+/
+
+
+

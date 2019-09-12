@@ -1,0 +1,12 @@
+declare
+	x number(7,2) := 1;
+	y number(7,2);
+begin
+	while x < 10
+	loop
+		y :=&sal;
+		insert into tempp values(y,'in x loop');
+		x := x+1;
+	end loop;
+end;
+/

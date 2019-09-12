@@ -1,0 +1,11 @@
+declare
+	x number(7,2) :=1;
+begin
+	while x<10
+	loop
+	insert into tempp values(x,'in while loop');
+	x :=x+1;
+	end loop;
+end;
+/
+

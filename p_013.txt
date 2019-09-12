@@ -1,0 +1,18 @@
+declare
+	type abc is record
+	(
+	a emp20.sal%type,
+	b emp20.job%type
+	);
+	type pqr is record
+	(
+	l number(4),
+	m abc
+	);
+	x pqr;
+begin
+	select sal, job into x.m from emp20
+	where ename = 'SCHOO';
+	insert into tempp values(x.m.a,x.m.b);
+end;
+/

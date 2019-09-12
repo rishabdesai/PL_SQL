@@ -1,0 +1,16 @@
+declare
+	x number(7,2) :=1;
+	y number(7,2) :=1;
+begin
+	while x<10
+	loop
+		while y<10
+		loop
+			insert into tempp values (y,'in y Loop');
+			y := y+1;
+		end loop;
+		insert into tempp values(x,' in x loop');
+			x := x+1;
+		end loop;
+end;
+/

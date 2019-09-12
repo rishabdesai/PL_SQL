@@ -1,0 +1,8 @@
+declare 
+	x emp20%rowtype;
+begin
+	select * into x from emp20
+	where ename='a';
+insert into tempp values(x.sal,x.job);
+end;
+/

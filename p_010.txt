@@ -1,0 +1,9 @@
+declare
+	x number(7,2);
+	y char(20);
+begin
+	select sal,job into x,y from emp20
+	where ename='a';
+	insert into tempp values(x,y);
+end;
+/

@@ -1,0 +1,7 @@
+Declare
+	x number(4);
+Begin
+	x := &x;
+	insert into tempp values(x,'name1');
+end;
+/

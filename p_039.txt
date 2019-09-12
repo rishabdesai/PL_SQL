@@ -1,0 +1,16 @@
+<<abc>>
+declare
+x number(4) := 1;
+begin
+	insert into tempp values(x,'before sub');
+<<pqr>>
+declare
+	x number(4) :=3;
+begin
+	insert into tempp values (abc.x,'in sub');
+	insert into tempp values (pqr.x,'in sub');
+end;
+
+insert into tempp values(x,'after sub');
+end;
+/
