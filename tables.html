@@ -60,7 +60,19 @@ hiredate date
 insert into emp6 values( '15-OCT-2015');
 insert into emp6 values ('31-oct-2015');
 insert into emp6 values ('15-jan-2016');
+------------------------------------------
 
+create table emp7 (
+ename varchar(30),
+sal number(10),
+comm number(10)
+);
+
+insert into emp7 values ('A',5000,500);
+insert into emp7 values ('B',6000,NULL);
+insert into emp7 values ('C',NULL,700);
+
+------------------------------------------
 ------------------------------------------
 create table emp30 ( ename varchar(30), sal number(7,2),deptno char(4));
 insert into emp30 values('&ename',&sal,'&deptno');
