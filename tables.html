@@ -1,3 +1,19 @@
+create table emp1 (
+empno char(4),
+ename varchar2(30),
+sal number(10,2),
+city varchar2(30),
+deptno number(2)
+);
+
+insert into emp1 values ('1','Adams',1000.0,'Mumbai',10);
+insert into emp1 values ('2','Black',2000.0,'Delhi',10);
+insert into emp1 values ('3','Allen',2500.0,'Mumbai',20);
+insert into emp1 values ('4','King',3000.0,'Delhi',30);
+insert into emp1 values ('5','Ford',4000.0,'Mumbai',40);
+
+
+
 ------------------------------------------
 create table emp30 ( ename varchar(30), sal number(7,2),deptno char(4));
 insert into emp30 values('&ename',&sal,'&deptno');
