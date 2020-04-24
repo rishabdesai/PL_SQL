@@ -121,6 +121,16 @@ loc char(4)
 insert into dept1 values (1,'TRN','BBY');
 insert into dept1 values (2,'EXP','DLH');
 insert into dept1 values (3,'MKTG','CAL');
+------------------------------------------
+
+create table depthead (
+deptno number(2),
+dhead varchar2(30)
+);
+
+insert into depthead values (1,' Arun');
+insert into depthead values (2,' Jack');
+
 
 ------------------------------------------
 create table emp30 ( ename varchar(30), sal number(7,2),deptno char(4));
