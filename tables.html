@@ -95,8 +95,25 @@ insert into emp8a values(3000,30);
 insert into emp8a values(4000,40);
 insert into emp8a values(5000,50);
 ------------------------------------------
+
+create table emp9 (
+empno char(4),
+ename varchar2(30),
+sal number(10,2),
+deptno number(2),
+job char(1),
+mgr char(4)
+);
+
+insert into emp9 values('1','Arun',8000,1,'M','4');
+insert into emp9 values('2','Ali',7000,1,'C','1');
+insert into emp9 values('3','kiran',3000,1,'c','1');
+insert into emp9 values('4','Jack',9000,2,'M',null);
+insert into emp9 values('5','Thomal',8000,2,'C','4');
+
+------------------------------------------
 create table emp30 ( ename varchar(30), sal number(7,2),deptno char(4));
-insert into emp30 values('&ename',&sal,'&deptno');
+--insert into emp30 values('&ename',&sal,'&deptno');
 insert into emp30 values('A',5000,1);
 insert into emp30 values('B',5000,1);
 insert into emp30 values('C',5000,1);
