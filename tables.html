@@ -148,6 +148,29 @@ projno char(4),
 empno char(4)
 );
 ------------------------------------------
+create table emp15 (
+empno char(4),
+ename varchar2(30)
+);
+
+insert into emp15 values('1','A');
+insert into emp15 values('2','B');
+insert into emp15 values('3','C');
+
+------------------------------------------
+create table emp16 (
+empno char(4),
+ename varchar2(30)
+);
+
+insert into emp15 values('1','A');
+insert into emp15 values('2','B');
+insert into emp15 values('4','D');
+insert into emp15 values('5','E');
+
+
+------------------------------------------
+
 create table emp30 ( ename varchar(30), sal number(7,2),deptno char(4));
 --insert into emp30 values('&ename',&sal,'&deptno');
 insert into emp30 values('A',5000,1);
