@@ -112,6 +112,17 @@ insert into emp9 values('4','Jack',9000,2,'M',null);
 insert into emp9 values('5','Thomal',8000,2,'C','4');
 
 ------------------------------------------
+create table dept1 (
+deptno number(2),
+dname varchar2(30),
+loc char(4)
+);
+
+insert into dept1 values (1,'TRN','BBY');
+insert into dept1 values (2,'EXP','DLH');
+insert into dept1 values (3,'MKTG','CAL');
+
+------------------------------------------
 create table emp30 ( ename varchar(30), sal number(7,2),deptno char(4));
 --insert into emp30 values('&ename',&sal,'&deptno');
 insert into emp30 values('A',5000,1);
