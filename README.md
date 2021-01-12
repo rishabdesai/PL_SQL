@@ -10,8 +10,8 @@ PL_SQL files
 007 - HRA calculation example  
 008 - 'dbms_output.put_line' example  
 009 - get data from table into program  
-010 - <tableName>.<columnName>%type   
-011 - <tableName>%rowtype  
+010 - tableName.columnName%type   
+011 - tableName%rowtype  
 012 - create user define structure using 'TYEP pqr IS RECORD'  
 013 - create structure within structure.  
 
