@@ -1,9 +1,9 @@
 # PL_SQL
 PL_SQL files
 
-001 - First PL/SQL program
-002 - Declare variable x and assing value
-003 - using '&', take numeric value of x from user.
+001 - First PL/SQL program  
+002 - Declare variable x and assing value  
+003 - using '&', take numeric value of x from user.  
 004 - using 'ACCEPT' and '&' to accept value from user.
 005 - using '&', take text value of x from user.
 006 - 'CONSTANT' variable
